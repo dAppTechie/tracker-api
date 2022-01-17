@@ -19,7 +19,7 @@ model User {
   department String?
   isAdmin    Boolean  @default(false)
   createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  updateAt   DateTime @updatedAt
 
   @@map("users")
 }
