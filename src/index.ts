@@ -5,7 +5,7 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
-  res.json({ hello: 'world' });
+  res.json({ hello: 'World' });
 });
 
 const PORT = Number(process.env.PORT ?? 8080);
