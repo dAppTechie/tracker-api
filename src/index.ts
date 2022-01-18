@@ -41,6 +41,6 @@ app.get('/', async (req, res) => {
 });
 
 const PORT = Number(process.env.PORT ?? 8080);
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });

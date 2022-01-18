@@ -9,17 +9,11 @@
   },
   "scripts": {
     "build": "rimraf dist && swc ./src -d dist",
-    "db:console": "docker compose exec postgres psql -h localhost -U postgres -d tracker_api_dev",
-    "db:migrate": "knex migrate:latest",
-    "docker:db:migrate": "docker compose run backend yarn db:migrate",
-    "rebuild:backend": "docker compose build backend && docker compose rm --stop backend && docker compose up -d backend",
-    "start": "node dist/index.js",
-    "start:docker": "yarn build && node --inspect=0.0.0.0 dist/index.js"
-  },
+    "start": "node dist/index.js"
+   },
   "dependencies": {
     "@prisma/client": "^3.8.1",
     "express": "^4.17.2",
-    "knex": "^1.0.1",
     "morgan": "^1.10.0",
     "nanoid": "^3.2.0",
     "pg": "^8.7.1",
